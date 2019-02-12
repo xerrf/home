@@ -3,3 +3,10 @@
 @import "base";
 @import "mixins";
 
+// .box {
+//     max-width: 
+// }
+
+section h2 {
+    @include thumbnail("../img/icon.png", $testColor);
+}
