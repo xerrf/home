@@ -1,0 +1,43 @@
+
+header {
+    grid-area: intro;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    p.links {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        align-content: space-between;
+        margin: 0.25em;
+        a {
+            margin: 0em 75%;
+        }
+    }
+}
+
+main {
+    grid-area: content;
+}
+
+aside#x1 {
+    grid-area: mL;
+}
+
+aisde#x2 {
+    grid-area: mR;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    'mL intro mR'
+    'mL content mR';
+}
